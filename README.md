@@ -90,14 +90,14 @@ const tx=await claimRewards(starknet, l2_token, recipient);
 
 ### getStaticATokenData
 
-Gets token totalSupply, last rewards index update & current_rewards_index.
+Gets staticAToken data.
  * @param `l2_token` the staticAToken address on Starknet
  * @param `provider`  ( defaulted to Alpha testnet if not provided)
 
 ```javascript
 import {getStaticATokenData} from "@starknet-aave-bridge-js";
 ...
-const data=await getStaticATokenData(aDAI.address, provider);// returns totalSupply, last_rewards_index_blocknumber & current_rewards_index
+const data=await getStaticATokenData(aDAI.address, provider);// returns totalSupply, name, symbol, last_rewards_index_blocknumber & current_rewards_index
  ```
 
 ### getUserInfo
